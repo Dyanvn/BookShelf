@@ -14,22 +14,39 @@ exports.createBook = async (req, res, next) => {
 // Read all with pagination & filter
 exports.getBooks = async (req, res, next) => {
   try {
-    const { page = 1, limit = 10, genre, startDate, endDate } = req.query;
+    const { page = 1, limit = 10, genre, startDate, search } = req.query;
     const query = {};
-    if (genre) query.genre = genre;
-    if (startDate || endDate) {
-      query.readDate = {};
-      if (startDate) query.readDate.$gte = new Date(startDate);
-      if (endDate) query.readDate.$lte = new Date(endDate);
+
+    // Lọc theo thể loại
+    if (genre && genre !== 'all') {
+      query.genre = genre;
+    }
+
+    // Lọc theo ngày bắt đầu
+    if (startDate) {
+      query.readDate = { $gte: new Date(startDate) };
+    }
+
+    // 🔍 Lọc theo tên sách hoặc tác giả
+    if (search) {
+      query.$or = [
+        { title: new RegExp(search, 'i') },   // không phân biệt hoa/thường
+        { author: new RegExp(search, 'i') }
+      ];
     }
 
     const books = await Book.find(query)
-      .limit(limit * 1)
+      .limit(parseInt(limit))
       .skip((page - 1) * limit)
       .sort({ readDate: -1 });
 
     const total = await Book.countDocuments(query);
-    res.json({ books, totalPages: Math.ceil(total / limit), currentPage: page });
+
+    res.json({
+      books,
+      totalPages: Math.ceil(total / limit),
+      currentPage: parseInt(page)
+    });
   } catch (err) {
     next(err);
   }
@@ -81,6 +98,34 @@ exports.getMonthlyStats = async (req, res, next) => {
     ]);
     
     res.json({ booksRead: stats[0]?.count || 0 });
+  } catch (err) {
+    next(err);
+  }
+};
+exports.getYearlyStats = async (req, res, next) => {
+  try {
+    const { year } = req.query;
+    const start = new Date(year, 0, 1);  // 01/01/year
+    const end = new Date(year, 11, 31); // 31/12/year
+    
+    const stats = await Book.aggregate([
+      { $match: { readDate: { $gte: start, $lte: end } } },
+      {
+        $group: {
+          _id: { $month: "$readDate" },
+          count: { $sum: 1 }
+        }
+      },
+      { $sort: { "_id": 1 } }
+    ]);
+
+    // format lại cho frontend dễ vẽ chart
+    const result = stats.map(s => ({
+      month: s._id,
+      books: s.count
+    }));
+
+    res.json(result);
   } catch (err) {
     next(err);
   }

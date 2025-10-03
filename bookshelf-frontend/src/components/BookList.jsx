@@ -30,7 +30,7 @@ const BookList = ({ books, onEdit, onDelete, onSuccess }) => {
               <TableCell>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline" onClick={() => onEdit(book)}>Edit</Button>
+                    <Button variant="outline" onClick={() => onEdit(book)}>Chỉnh Sửa</Button>
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
@@ -39,7 +39,7 @@ const BookList = ({ books, onEdit, onDelete, onSuccess }) => {
                     <BookForm book={book} onSuccess={onSuccess} />
                   </DialogContent>
                 </Dialog>
-                <Button variant="destructive" onClick={() => onDelete(book._id)} className="ml-2">Delete</Button>
+                <Button variant="destructive" onClick={() => onDelete(book._id)} className="ml-2">Xóa</Button>
               </TableCell>
             </TableRow>
           ))

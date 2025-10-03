@@ -1,0 +1,242 @@
+[
+  {
+    "title":"Sách 1",
+    "author":"Victor Hugo",
+    "genre":"Poetry",
+    "readDate":"2024-05-11T16:28:05.930380Z",
+    "createdAt":"2025-10-03T05:30:17.068748Z",
+    "updatedAt":"2025-10-03T05:30:17.068758Z"
+  },
+  {
+    "title":"Sách 2",
+    "author":"Nguyễn Minh Châu",
+    "genre":"Poetry",
+    "readDate":"2024-09-23T19:33:58.055504Z",
+    "createdAt":"2025-10-03T05:30:17.068774Z",
+    "updatedAt":"2025-10-03T05:30:17.068779Z"
+  },
+  {
+    "title":"Sách 3",
+    "author":"George Orwell",
+    "genre":"Short Stories",
+    "readDate":"2025-09-11T20:21:31.197468Z",
+    "createdAt":"2025-10-03T05:30:17.068805Z",
+    "updatedAt":"2025-10-03T05:30:17.068814Z"
+  },
+  {
+    "title":"Sách 4",
+    "author":"George Orwell",
+    "genre":"Mystery",
+    "readDate":"2025-03-20T14:37:21.589017Z",
+    "createdAt":"2025-10-03T05:30:17.068829Z",
+    "updatedAt":"2025-10-03T05:30:17.068833Z"
+  },
+  {
+    "title":"Sách 5",
+    "author":"Trần Đăng Khoa",
+    "genre":"Poetry",
+    "readDate":"2024-12-13T09:23:54.840434Z",
+    "createdAt":"2025-10-03T05:30:17.068845Z",
+    "updatedAt":"2025-10-03T05:30:17.068849Z"
+  },
+  {
+    "title":"Sách 6",
+    "author":"Nguyễn Minh Châu",
+    "genre":"Business",
+    "readDate":"2024-03-08T06:41:49.883470Z",
+    "createdAt":"2025-10-03T05:30:17.068861Z",
+    "updatedAt":"2025-10-03T05:30:17.068865Z"
+  },
+  {
+    "title":"Sách 7",
+    "author":"Ernest Hemingway",
+    "genre":"History",
+    "readDate":"2024-04-05T18:14:11.113192Z",
+    "createdAt":"2025-10-03T05:30:17.068878Z",
+    "updatedAt":"2025-10-03T05:30:17.068882Z"
+  },
+  {
+    "title":"Sách 8",
+    "author":"J.K. Rowling",
+    "genre":"Science",
+    "readDate":"2025-08-07T22:33:57.937147Z",
+    "createdAt":"2025-10-03T05:30:17.068898Z",
+    "updatedAt":"2025-10-03T05:30:17.068903Z"
+  },
+  {
+    "title":"Sách 9",
+    "author":"Nguyễn Ngọc Ký",
+    "genre":"Business",
+    "readDate":"2024-05-05T20:42:23.032532Z",
+    "createdAt":"2025-10-03T05:30:17.068917Z",
+    "updatedAt":"2025-10-03T05:30:17.068924Z"
+  },
+  {
+    "title":"Sách 10",
+    "author":"Trần Đăng Khoa",
+    "genre":"Mystery",
+    "readDate":"2025-02-23T17:54:57.472111Z",
+    "createdAt":"2025-10-03T05:30:17.068945Z",
+    "updatedAt":"2025-10-03T05:30:17.068953Z"
+  },
+  {
+    "title":"Sách 11",
+    "author":"Stephen King",
+    "genre":"Short Stories",
+    "readDate":"2024-05-15T00:40:26.813444Z",
+    "createdAt":"2025-10-03T05:30:17.068978Z",
+    "updatedAt":"2025-10-03T05:30:17.068982Z"
+  },
+  {
+    "title":"Sách 12",
+    "author":"Mark Twain",
+    "genre":"Mystery",
+    "readDate":"2025-06-26T12:12:31.965073Z",
+    "createdAt":"2025-10-03T05:30:17.068995Z",
+    "updatedAt":"2025-10-03T05:30:17.068999Z"
+  },
+  {
+    "title":"Sách 13",
+    "author":"J.K. Rowling",
+    "genre":"Novel",
+    "readDate":"2024-02-07T01:29:15.023066Z",
+    "createdAt":"2025-10-03T05:30:17.069010Z",
+    "updatedAt":"2025-10-03T05:30:17.069014Z"
+  },
+  {
+    "title":"Sách 14",
+    "author":"Nam Cao",
+    "genre":"Short Stories",
+    "readDate":"2024-03-13T19:40:46.938780Z",
+    "createdAt":"2025-10-03T05:30:17.069027Z",
+    "updatedAt":"2025-10-03T05:30:17.069030Z"
+  },
+  {
+    "title":"Sách 15",
+    "author":"Nam Cao",
+    "genre":"Poetry",
+    "readDate":"2024-12-20T09:05:22.148302Z",
+    "createdAt":"2025-10-03T05:30:17.069042Z",
+    "updatedAt":"2025-10-03T05:30:17.069046Z"
+  },
+  {
+    "title":"Sách 16",
+    "author":"Nguyễn Minh Châu",
+    "genre":"Business",
+    "readDate":"2025-03-26T06:27:18.734127Z",
+    "createdAt":"2025-10-03T05:30:17.069058Z",
+    "updatedAt":"2025-10-03T05:30:17.069062Z"
+  },
+  {
+    "title":"Sách 17",
+    "author":"Nguyễn Nhật Ánh",
+    "genre":"Short Stories",
+    "readDate":"2024-09-28T11:07:30.015365Z",
+    "createdAt":"2025-10-03T05:30:17.069073Z",
+    "updatedAt":"2025-10-03T05:30:17.069077Z"
+  },
+  {
+    "title":"Sách 18",
+    "author":"Mark Twain",
+    "genre":"History",
+    "readDate":"2024-03-30T14:51:52.056560Z",
+    "createdAt":"2025-10-03T05:30:17.069089Z",
+    "updatedAt":"2025-10-03T05:30:17.069093Z"
+  },
+  {
+    "title":"Sách 19",
+    "author":"Nguyễn Minh Châu",
+    "genre":"Mystery",
+    "readDate":"2025-06-02T08:05:13.105354Z",
+    "createdAt":"2025-10-03T05:30:17.069105Z",
+    "updatedAt":"2025-10-03T05:30:17.069109Z"
+  },
+  {
+    "title":"Sách 20",
+    "author":"Jane Austen",
+    "genre":"Self-help",
+    "readDate":"2025-06-08T12:24:19.843119Z",
+    "createdAt":"2025-10-03T05:30:17.069122Z",
+    "updatedAt":"2025-10-03T05:30:17.069126Z"
+  },
+  {
+    "title":"Sách 21",
+    "author":"Victor Hugo",
+    "genre":"Mystery",
+    "readDate":"2024-08-25T21:56:18.523775Z",
+    "createdAt":"2025-10-03T05:30:17.069138Z",
+    "updatedAt":"2025-10-03T05:30:17.069142Z"
+  },
+  {
+    "title":"Sách 22",
+    "author":"Mark Twain",
+    "genre":"Science",
+    "readDate":"2024-02-15T01:22:50.883640Z",
+    "createdAt":"2025-10-03T05:30:17.069153Z",
+    "updatedAt":"2025-10-03T05:30:17.069157Z"
+  },
+  {
+    "title":"Sách 23",
+    "author":"Victor Hugo",
+    "genre":"Comics",
+    "readDate":"2024-06-14T10:22:05.034986Z",
+    "createdAt":"2025-10-03T05:30:17.069179Z",
+    "updatedAt":"2025-10-03T05:30:17.069183Z"
+  },
+  {
+    "title":"Sách 24",
+    "author":"Mark Twain",
+    "genre":"Education",
+    "readDate":"2024-07-06T21:25:55.528054Z",
+    "createdAt":"2025-10-03T05:30:17.069199Z",
+    "updatedAt":"2025-10-03T05:30:17.069203Z"
+  },
+  {
+    "title":"Sách 25",
+    "author":"Victor Hugo",
+    "genre":"Self-help",
+    "readDate":"2025-05-06T22:53:19.461822Z",
+    "createdAt":"2025-10-03T05:30:17.069215Z",
+    "updatedAt":"2025-10-03T05:30:17.069219Z"
+  },
+  {
+    "title":"Sách 26",
+    "author":"Ernest Hemingway",
+    "genre":"Mystery",
+    "readDate":"2025-07-10T18:38:23.999510Z",
+    "createdAt":"2025-10-03T05:30:17.069231Z",
+    "updatedAt":"2025-10-03T05:30:17.069236Z"
+  },
+  {
+    "title":"Sách 27",
+    "author":"Victor Hugo",
+    "genre":"Novel",
+    "readDate":"2025-09-24T11:28:07.168892Z",
+    "createdAt":"2025-10-03T05:30:17.069249Z",
+    "updatedAt":"2025-10-03T05:30:17.069252Z"
+  },
+  {
+    "title":"Sách 28",
+    "author":"J.K. Rowling",
+    "genre":"Comics",
+    "readDate":"2024-04-02T13:39:13.719833Z",
+    "createdAt":"2025-10-03T05:30:17.069265Z",
+    "updatedAt":"2025-10-03T05:30:17.069269Z"
+  },
+  {
+    "title":"Sách 29",
+    "author":"Paulo Coelho",
+    "genre":"Science",
+    "readDate":"2025-02-24T16:40:05.808403Z",
+    "createdAt":"2025-10-03T05:30:17.069280Z",
+    "updatedAt":"2025-10-03T05:30:17.069284Z"
+  },
+  {
+    "title":"Sách 30",
+    "author":"Ernest Hemingway",
+    "genre":"Poetry",
+    "readDate":"2025-03-05T08:02:10.166172Z",
+    "createdAt":"2025-10-03T05:30:17.069296Z",
+    "updatedAt":"2025-10-03T05:30:17.069300Z"
+  }
+]

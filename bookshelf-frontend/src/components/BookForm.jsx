@@ -51,36 +51,42 @@ const BookForm = ({ book, onSuccess }) => {
 
   return (
     <form onSubmit={handleSubmit} className="mb-6">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <Label htmlFor="title">Title</Label>
-          <Input id="title" name="title" value={formData.title} onChange={handleChange} required />
+          <Label htmlFor="title">Title (<span className="italic">Tên Sách</span>): </Label>
+          <Input id="title" name="title" maxLength={50} value={formData.title} onChange={handleChange} required className="truncate" />
         </div>
         <div>
-          <Label htmlFor="author">Author</Label>
+          <Label htmlFor="author">Author(Tên Tác Giả): </Label>
           <Input id="author" name="author" value={formData.author} onChange={handleChange} required />
         </div>
         <div>
-          <Label htmlFor="genre">Genre</Label>
+          <Label htmlFor="genre">Genre (Thể Loại)</Label>
           <Select onValueChange={handleGenreChange} value={formData.genre}>
             <SelectTrigger>
               <SelectValue placeholder="Select genre" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Fiction">Fiction</SelectItem>
-              <SelectItem value="Non-Fiction">Non-Fiction</SelectItem>
-              <SelectItem value="Sci-Fi">Sci-Fi</SelectItem>
-              <SelectItem value="Mystery">Mystery</SelectItem>
-              {/* Thêm thể loại khác nếu cần */}
+              <SelectItem value="Short Stories">Truyện ngắn</SelectItem>
+              <SelectItem value="Novel">Tiểu thuyết</SelectItem>
+              <SelectItem value="Poetry">Thơ</SelectItem>
+              <SelectItem value="Science">Khoa học</SelectItem>
+              <SelectItem value="History">Lịch sử</SelectItem>
+              <SelectItem value="Self-help">Tâm lý / Kỹ năng sống</SelectItem>
+              <SelectItem value="Business">Kinh doanh</SelectItem>
+              <SelectItem value="Education">Học thuật</SelectItem>
+              <SelectItem value="Comics">Truyện tranh</SelectItem>
+              <SelectItem value="Other">Khác</SelectItem>
+              
             </SelectContent>
           </Select>
         </div>
         <div>
-          <Label htmlFor="readDate">Read Date</Label>
+          <Label htmlFor="readDate">Ngày Đọc</Label>
           <Input id="readDate" name="readDate" type="date" value={formData.readDate} onChange={handleChange} required />
         </div>
       </div>
-      <Button type="submit" className="mt-4">{book ? 'Update' : 'Add Book'}</Button>
+      <Button type="submit" className="mt-4">{book ? 'Cập Nhật' : 'Thêm Sách'}</Button>
     </form>
   );
 };
